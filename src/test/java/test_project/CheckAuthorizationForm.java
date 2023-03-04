@@ -18,6 +18,11 @@ public class CheckAuthorizationForm extends TestBase {
 
     public void checkLoginForm() {
 
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
+
         {
             step("Открываем главную страницу", () -> {
 
@@ -53,7 +58,7 @@ public class CheckAuthorizationForm extends TestBase {
                 results.checkNamesOfButtonsOnAuthorizationForm("Войти");
                 results.checkNamesOfButtonsOnAuthorizationForm("Забыли пароль?");
             });
-            Selenide.closeWebDriver();
+
         }
     }
 }

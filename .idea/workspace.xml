@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="separate tests" />
+    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="add close webdriver">
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/AuthorizationFooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_project/AuthorizationFooter.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +80,7 @@
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\notifications" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AuthorizationFooter">
+  <component name="RunManager" selected="Gradle.AuthorizationFooter.checkFooterElements">
     <configuration name="AuthorizationFooter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -102,7 +104,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CheckAuthorizationButtons.checkAuthorizationButtons" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AuthorizationFooter.checkFooterElements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -115,7 +117,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test_project.CheckAuthorizationButtons.checkAuthorizationButtons&quot;" />
+            <option value="&quot;test_project.AuthorizationFooter.checkFooterElements&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -196,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AuthorizationFooter.checkFooterElements" />
         <item itemvalue="Gradle.AuthorizationFooter" />
         <item itemvalue="Gradle.Ui_tests" />
         <item itemvalue="Gradle.InvalidAuthorization.authorizationByUnregisteredClient" />
         <item itemvalue="Gradle.CheckAuthorizationForm.checkLoginForm" />
-        <item itemvalue="Gradle.CheckAuthorizationButtons.checkAuthorizationButtons" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677954785888</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add close webdriver">
+      <created>1677955157647</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677955157647</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,6 +307,7 @@
     <MESSAGE value="added 2 tests" />
     <MESSAGE value="update attach file" />
     <MESSAGE value="separate tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="separate tests" />
+    <MESSAGE value="add close webdriver" />
+    <option name="LAST_COMMIT_MESSAGE" value="add close webdriver" />
   </component>
 </project>

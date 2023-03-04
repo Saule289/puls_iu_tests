@@ -14,6 +14,10 @@ public class AuthorizationFooter extends TestBase {
     @DisplayName("Проверка элементов футера на странице авторизации")
     public void checkFooterElements() {
 
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
 
         step("Открываем главную страницу", () -> {
 
@@ -45,8 +49,6 @@ public class AuthorizationFooter extends TestBase {
             results.checkRightFooterElements("puls.ru");
             results.checkRightFooterElements("+7 (495) 665-76-20");
             results.checkRightFooterElements("puls@puls.ru");
-            Selenide.closeWebDriver();
-
-        });
+                  });
     }
 }

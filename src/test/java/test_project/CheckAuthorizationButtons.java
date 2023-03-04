@@ -14,6 +14,11 @@ public class CheckAuthorizationButtons extends TestBase{
     @DisplayName("Проверка названия модального окна при нажатии на соответствующие кнопки")
     public void checkAuthorizationButtons() {
 
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
+
         step("Открываем главную страницу", () -> {
 
             pageObjects.openPage();
@@ -40,6 +45,5 @@ public class CheckAuthorizationButtons extends TestBase{
             pageObjects.clickOnButtonsOnLoginForm().forgetPassword.click();
             results.checkNamesOfModalWindowOnAuthorizationForm("Восстановление пароля");
         });
-        Selenide.closeWebDriver();
     }
 }
