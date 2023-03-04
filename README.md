@@ -1,5 +1,5 @@
 # **Проект по автоматизации тестирования страницы фармацевтической компании "ПУЛЬС"**
-![puls.svg](images/logo/puls.svg)
+![puls.svg.png](images/logo/puls.svg.png)
 ___
 ## :bookmark_tabs: Содержание:
 
