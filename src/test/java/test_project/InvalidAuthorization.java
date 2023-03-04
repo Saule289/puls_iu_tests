@@ -63,6 +63,5 @@ public class InvalidAuthorization extends TestBase {
 
             $(".modal__message-title").$(withText("Ошибка аутентификации")).isDisplayed();
         });
-        Selenide.closeWebDriver();
-    }
+         }
 }
