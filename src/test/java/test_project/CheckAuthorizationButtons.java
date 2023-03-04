@@ -40,5 +40,6 @@ public class CheckAuthorizationButtons extends TestBase{
             pageObjects.clickOnButtonsOnLoginForm().forgetPassword.click();
             results.checkNamesOfModalWindowOnAuthorizationForm("Восстановление пароля");
         });
+        Selenide.closeWebDriver();
     }
 }

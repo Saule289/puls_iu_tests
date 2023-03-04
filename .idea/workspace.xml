@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="update attach file">
-      <change afterPath="$PROJECT_DIR$/src/test/java/test_project/AuthorizationFooter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test_project/CheckAuthorizationButtons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test_project/CheckAuthorizationForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test_project/InvalidAuthorization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" afterDir="false" />
-    </list>
+    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="separate tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -276,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677953020336</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="separate tests">
+      <created>1677954785888</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677954785888</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +297,7 @@
     <MESSAGE value="added summary.json" />
     <MESSAGE value="added 2 tests" />
     <MESSAGE value="update attach file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update attach file" />
+    <MESSAGE value="separate tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="separate tests" />
   </component>
 </project>

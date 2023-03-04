@@ -1,5 +1,6 @@
 package test_project;
 
+import com.codeborne.selenide.Selenide;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -58,5 +59,6 @@ public class InvalidAuthorization extends TestBase {
 
             $(".modal__message-title").$(withText("Ошибка аутентификации")).isDisplayed();
         });
+        Selenide.closeWebDriver();
     }
 }

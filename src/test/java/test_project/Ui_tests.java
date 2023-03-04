@@ -169,6 +169,7 @@ public class Ui_tests extends TestBase {
         step("Проверка название ссылки для просмотра контактов" + " " + contacts_reference + " " + "по выбранной вкладке" + " " + divisions, () -> {
             $(".pd-content").shouldHave(text(contacts_reference));
         });
+        Selenide.closeWebDriver();
     }
 
 

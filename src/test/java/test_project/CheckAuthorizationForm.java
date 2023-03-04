@@ -1,5 +1,6 @@
 package test_project;
 
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -52,6 +53,7 @@ public class CheckAuthorizationForm extends TestBase {
                 results.checkNamesOfButtonsOnAuthorizationForm("Войти");
                 results.checkNamesOfButtonsOnAuthorizationForm("Забыли пароль?");
             });
+            Selenide.closeWebDriver();
         }
     }
 }
