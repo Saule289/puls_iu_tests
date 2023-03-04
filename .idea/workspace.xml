@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="added 2 tests">
+    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="update attach file">
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_project/AuthorizationFooter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_project/CheckAuthorizationButtons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_project/CheckAuthorizationForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test_project/InvalidAuthorization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" afterDir="false" />
     </list>
@@ -81,8 +85,8 @@
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\notifications" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Ui_tests.checkLoginForm">
-    <configuration name="Ui_tests.authorizationByUnregisteredClient" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AuthorizationFooter">
+    <configuration name="AuthorizationFooter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -95,7 +99,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test_project.Ui_tests.authorizationByUnregisteredClient&quot;" />
+            <option value="&quot;test_project.AuthorizationFooter&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -105,7 +109,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Ui_tests.checkAuthorizationButtons" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CheckAuthorizationButtons.checkAuthorizationButtons" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -118,7 +122,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test_project.Ui_tests.checkAuthorizationButtons&quot;" />
+            <option value="&quot;test_project.CheckAuthorizationButtons.checkAuthorizationButtons&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -128,7 +132,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Ui_tests.checkFooterElements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CheckAuthorizationForm.checkLoginForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -141,7 +145,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test_project.Ui_tests.checkFooterElements&quot;" />
+            <option value="&quot;test_project.CheckAuthorizationForm.checkLoginForm&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,7 +155,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Ui_tests.checkLoginForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="InvalidAuthorization.authorizationByUnregisteredClient" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -164,7 +168,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test_project.Ui_tests.checkLoginForm&quot;" />
+            <option value="&quot;test_project.InvalidAuthorization.authorizationByUnregisteredClient&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -174,34 +178,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="puls_uitest [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Ui_tests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="allureServe" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test_project.Ui_tests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Ui_tests.checkLoginForm" />
-        <item itemvalue="Gradle.Ui_tests.checkAuthorizationButtons" />
-        <item itemvalue="Gradle.Ui_tests.checkFooterElements" />
-        <item itemvalue="Gradle.Ui_tests.authorizationByUnregisteredClient" />
-        <item itemvalue="Gradle.puls_uitest [allureServe]" />
+        <item itemvalue="Gradle.AuthorizationFooter" />
+        <item itemvalue="Gradle.Ui_tests" />
+        <item itemvalue="Gradle.InvalidAuthorization.authorizationByUnregisteredClient" />
+        <item itemvalue="Gradle.CheckAuthorizationForm.checkLoginForm" />
+        <item itemvalue="Gradle.CheckAuthorizationButtons.checkAuthorizationButtons" />
       </list>
     </recent_temporary>
   </component>
@@ -256,8 +262,33 @@
       <option name="project" value="LOCAL" />
       <updated>1677951326337</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update attach file">
+      <created>1677952866698</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677952866698</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update attach file">
+      <created>1677953020336</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677953020336</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added ui tests" />
@@ -265,6 +296,7 @@
     <MESSAGE value="added tag remote_test" />
     <MESSAGE value="added summary.json" />
     <MESSAGE value="added 2 tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 2 tests" />
+    <MESSAGE value="update attach file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update attach file" />
   </component>
 </project>
