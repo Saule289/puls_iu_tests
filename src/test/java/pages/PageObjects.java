@@ -1,9 +1,12 @@
 package pages;
 
+import com.codeborne.selenide.selector.ByText;
+
 import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class PageObjects {
@@ -15,7 +18,7 @@ public class PageObjects {
 
     public PageObjects choiceMenuHeaders(String value) {
 
-       $(".hn-nav-list").$(withText(value)).hover();
+        $(".header-nav").$(withText(value)).hover();
 
         return this;
     }
