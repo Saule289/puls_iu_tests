@@ -7,12 +7,14 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.PageObjects;
 import pages.Results;
 
 import java.util.Map;
 
+@Tag("remote_test")
     public class TestBase {
 
      PageObjects pageObjects = new PageObjects();
