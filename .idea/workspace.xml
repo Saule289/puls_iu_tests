@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="change CheckAuthorizationButtons" />
+    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="delete webdriver">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/puls.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +80,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\notifications" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\logo" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.CheckAuthorizationButtons">
@@ -297,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677955940813</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="delete webdriver">
+      <created>1677956464376</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677956464376</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,6 +335,7 @@
     <MESSAGE value="separate tests" />
     <MESSAGE value="add close webdriver" />
     <MESSAGE value="change CheckAuthorizationButtons" />
-    <option name="LAST_COMMIT_MESSAGE" value="change CheckAuthorizationButtons" />
+    <MESSAGE value="delete webdriver" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete webdriver" />
   </component>
 </project>
