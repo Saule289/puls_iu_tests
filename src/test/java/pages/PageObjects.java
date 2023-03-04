@@ -15,7 +15,7 @@ public class PageObjects {
 
     public PageObjects choiceMenuHeaders(String value) {
 
-        $(byText(value)).hover();
+       $(".hn-nav-list").$(withText(value)).hover();
 
         return this;
     }
