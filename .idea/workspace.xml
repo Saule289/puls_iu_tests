@@ -7,6 +7,10 @@
     <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="added summary.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Results.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_project/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +44,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="puls_uitest" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="puls_uitest" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="puls_uitest" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="puls_uitest" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -68,8 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -97,8 +85,8 @@
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\notifications" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.puls_uitest [allureReport]">
-    <configuration name="Ui_tests.chosenCityReflectedInTheRightCornerOfPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Ui_tests.checkFooterElements">
+    <configuration name="Ui_tests.authorizationByUnregisteredClient" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -111,7 +99,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test_project.Ui_tests.chosenCityReflectedInTheRightCornerOfPage&quot;" />
+            <option value="&quot;test_project.Ui_tests.authorizationByUnregisteredClient&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -121,7 +109,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Ui_tests.searchInformation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Ui_tests.checkAuthorizationButtons" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -134,7 +122,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test_project.Ui_tests.searchInformation&quot;" />
+            <option value="&quot;test_project.Ui_tests.checkAuthorizationButtons&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -144,23 +132,25 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="puls_uitest [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Ui_tests.checkFooterElements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="allureReport" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test_project.Ui_tests.checkFooterElements&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -186,7 +176,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="puls_uitest [downloadAllure]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="puls_uitest [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -197,7 +187,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="downloadAllure" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.puls_uitest [allureReport]" />
+        <item itemvalue="Gradle.Ui_tests.checkFooterElements" />
+        <item itemvalue="Gradle.Ui_tests.authorizationByUnregisteredClient" />
+        <item itemvalue="Gradle.Ui_tests.checkAuthorizationButtons" />
         <item itemvalue="Gradle.puls_uitest [allureServe]" />
-        <item itemvalue="Gradle.puls_uitest [downloadAllure]" />
-        <item itemvalue="Gradle.Ui_tests.searchInformation" />
-        <item itemvalue="Gradle.Ui_tests.chosenCityReflectedInTheRightCornerOfPage" />
+        <item itemvalue="Gradle.puls_uitest [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677911502128</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added summary.json">
+      <created>1677912711476</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677912711476</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

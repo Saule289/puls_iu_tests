@@ -26,9 +26,26 @@ public class Results {
 
         $$(".auth__input-wrap").shouldHave(itemWithText(value));
     }
+
     public void checkNamesOfButtonsOnAuthorizationForm(String value) {
 
-       $$("button").shouldHave(itemWithText(value));
+        $$("button").shouldHave(itemWithText(value));
     }
+
+    public void checkNamesOfModalWindowOnAuthorizationForm(String value) {
+
+        $$(".auth__title").shouldHave(itemWithText(value));
+    }
+
+    public void checkLeftFooterElements(String value) {
+
+        $(".auth__footer-left").shouldHave(text(value));
+    }
+
+    public void checkRightFooterElements(String value) {
+
+        $(".auth__footer-right").shouldHave(text(value));
+    }
+
 
 }
