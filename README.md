@@ -33,46 +33,35 @@ ___
 Также реализована сборка в <code>Jenkins</code> с формированием Allure-отчета и отправкой уведомления с результатами в <code>Telegram</code> после завершения прогона.
 
 Allure-отчет включает в себя:
-* шаги выполнения тестов;
-* скриншот страницы в браузере в момент окончания автотеста;
+* Шаги выполнения тестов;
+* Скриншот страницы в браузере в момент окончания автотеста;
 * Page Source;
-* логи браузерной консоли;
-* видео выполнения автотеста.
+* Логи браузерной консоли;
+* Видео выполнения автотеста.
 ___
-## :реализованный проверки
+## :Реализованные проверки
+
+* Проверка элементов меню на главной странице
+* Проверка элементов футера
+* Проверка формы авторизации
+* Проверка невалидной авторизации
+* Поиск информации на странице
 
 ___
 ## :running_woman: Запуск тестов
 
-___
 ### Локальный запуск тестов
 ```
 gradle clean test
 ```
-
-При необходимости можно переопределить параметры запуска
-```
-gradle clean test
--Denv=local
--Dbrowser=${BROWSER_NAME}
--DbrowserVersion=${BROWSER_VERSION}
--DbrowserSize=${BROWSER_SIZE}
--DbaseUrl=${BASE_URL}
-```
 ___
 ### Запуск тестов на удаленном браузере
 ```
-gradle clean test -Denv=remote
-```
-При необходимости также можно переопределить параметры запуска
-
-```
-gradle clean test 
--Dbrowser=${BROWSER_NAME}
--DbrowserМersion=${BROWSER_VERSION}
--DbrowserSize=${BROWSER_SIZE}
--DbaseUrl=${BASE_URL}
--DremoteUrl=${REMOTE_BROWSER_URL}
+gradle clean remote_test
+"-Dbrowser=${BROWSER}" 
+"-DbrowserVersion=${BROWSER_VERSION}" 
+"-DbrowserSize=${BROWSER_SIZE}" 
+"-DremoteUrl=${REMOTE_URL}"
 ```
 ___
 ### Параметры сборки
