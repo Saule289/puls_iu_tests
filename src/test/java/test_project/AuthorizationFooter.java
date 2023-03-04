@@ -14,11 +14,6 @@ public class AuthorizationFooter extends TestBase {
     @DisplayName("Проверка элементов футера на странице авторизации")
     public void checkFooterElements() {
 
-        step("Закрыть все вкладки", () -> {
-
-            Selenide.closeWebDriver();
-        });
-
         step("Открываем главную страницу", () -> {
 
             pageObjects.openPage();

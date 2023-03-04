@@ -36,13 +36,13 @@ public class CheckAuthorizationButtons extends TestBase{
         });
 
         step("Проверка названия модального окна при нажатии на кнопку Регистрации", () -> {
-            pageObjects.clickOnButtonsOnLoginForm().registration.click();
+            pageObjects.registration.click();
             results.checkNamesOfModalWindowOnAuthorizationForm("Регистрация аккаунта");
         });
 
         step("Проверка названия модального окна при нажатии на кнопку Забыли пароль", () -> {
             Selenide.refresh();
-            pageObjects.clickOnButtonsOnLoginForm().forgetPassword.click();
+            pageObjects.forgetPassword.click();
             results.checkNamesOfModalWindowOnAuthorizationForm("Восстановление пароля");
         });
     }

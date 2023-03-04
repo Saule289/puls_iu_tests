@@ -33,6 +33,11 @@ public class Ui_tests extends TestBase {
 
     public void checkHeaderNames() {
 
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
+
         step("Открываем главную страницу", () -> {
 
             pageObjects.openPage();
@@ -71,6 +76,11 @@ public class Ui_tests extends TestBase {
     @DisplayName("При смене языка меняется лого компании на английский")
     void logoChangedToEnglish() {
 
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
+
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
         });
@@ -90,6 +100,11 @@ public class Ui_tests extends TestBase {
             "Доставка", "Личный кабинет", "Брянск", "Маркировка"
     })
     void searchCheck(String searchInput) {
+
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
 
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
@@ -122,6 +137,10 @@ public class Ui_tests extends TestBase {
             String contact_number
 
     ) {
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
         });
@@ -154,6 +173,12 @@ public class Ui_tests extends TestBase {
                     String divisions,
                     String contacts_reference
             ) {
+
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
+
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
         });
@@ -169,12 +194,6 @@ public class Ui_tests extends TestBase {
         step("Проверка название ссылки для просмотра контактов" + " " + contacts_reference + " " + "по выбранной вкладке" + " " + divisions, () -> {
             $(".pd-content").shouldHave(text(contacts_reference));
         });
-        Selenide.closeWebDriver();
+
     }
-
-
-
-
-
-
 }
