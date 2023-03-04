@@ -121,8 +121,8 @@ public class Ui_tests extends TestBase {
             pageObjects.openPage();
         });
 
-        step("Навести мышку на вкладку Группа Компаний", () -> {
-            pageObjects.choiceMenuHeaders("Группа Компаний");
+       step("Навести мышку на вкладку Группа Компаний", () -> {
+            pageObjects.choiceMenuHeaders("Группа компаний");
         });
 
         step("Выбрать город", () -> {
