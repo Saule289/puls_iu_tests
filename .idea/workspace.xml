@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="add README.md">
-      <change afterPath="$PROJECT_DIR$/images/logo/Allure_Report.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/Gradle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/Intelij_IDEA.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/Java.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/Selenide.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/Selenoid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/Telegram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/jenkins.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/jira.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo/junit5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/screenshots/allureReportMain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/screenshots/allureReportTests.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/screenshots/jenkinsBuild.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Intelij_IDEA.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo/Intelij_IDEA.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/Telegram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo/Telegram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/github.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo/GitHub.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/jenkins.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo/Jenkins.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo/junit5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo/JUnit5.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,8 +86,9 @@
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\notifications" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\screenshots" />
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\logo" />
+      <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\video" />
+      <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\screenshots" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.CheckAuthorizationButtons">
@@ -339,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677966725419</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add README.md">
+      <created>1677969779749</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1677969779749</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
