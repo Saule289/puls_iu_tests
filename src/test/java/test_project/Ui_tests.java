@@ -313,7 +313,7 @@ public class Ui_tests extends TestBase {
 
         });
 
-        step("Проверка элементов на левой стороное страницы", () -> {
+        step("Проверка элементов на левой стороне страницы", () -> {
 
            results.checkLeftFooterElements("© 2023 ООО «ФК ПУЛЬС»");
            results.checkLeftFooterElements("Тех. поддержка");

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="added summary.json">
+    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="added 2 tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/allure-report/widgets/summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Results.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_project/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +81,7 @@
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\notifications" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Ui_tests.checkFooterElements">
+  <component name="RunManager" selected="Gradle.Ui_tests.checkLoginForm">
     <configuration name="Ui_tests.authorizationByUnregisteredClient" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -155,6 +151,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Ui_tests.checkLoginForm" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test_project.Ui_tests.checkLoginForm&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="puls_uitest [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -176,34 +195,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="puls_uitest [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Ui_tests.checkLoginForm" />
+        <item itemvalue="Gradle.Ui_tests.checkAuthorizationButtons" />
         <item itemvalue="Gradle.Ui_tests.checkFooterElements" />
         <item itemvalue="Gradle.Ui_tests.authorizationByUnregisteredClient" />
-        <item itemvalue="Gradle.Ui_tests.checkAuthorizationButtons" />
         <item itemvalue="Gradle.puls_uitest [allureServe]" />
-        <item itemvalue="Gradle.puls_uitest [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677912711476</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added 2 tests">
+      <created>1677951326336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677951326337</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -259,6 +264,7 @@
     <MESSAGE value="added chnages in menuheaders" />
     <MESSAGE value="added tag remote_test" />
     <MESSAGE value="added summary.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="added summary.json" />
+    <MESSAGE value="added 2 tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 2 tests" />
   </component>
 </project>
