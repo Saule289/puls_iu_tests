@@ -103,5 +103,5 @@ ___
 
 К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
-  <img title="Selenoid Video" src="images/gif/videoExample.gif">
+  ![videoExample.mp4](video/videoExample.mp4)
 </p>
