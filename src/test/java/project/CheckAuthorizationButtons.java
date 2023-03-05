@@ -1,10 +1,9 @@
-package test_project;
+package project;
 
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import test_project.TestBase;
 
 import static io.qameta.allure.Allure.step;
 

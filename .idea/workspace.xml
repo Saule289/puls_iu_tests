@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="add README.md" />
+    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="add README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/data/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/AuthorizationFooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/AuthorizationFooter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/CheckAuthorizationButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/CheckAuthorizationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/InvalidAuthorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/InvalidAuthorization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/UiTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +92,7 @@
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\screenshots" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CheckAuthorizationButtons">
+  <component name="RunManager" selected="Gradle.UiTests.chosenCityReflectedInTheRightCornerOfPage">
     <configuration name="AuthorizationFooter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -153,7 +162,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="InvalidAuthorization.authorizationByUnregisteredClient" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UiTests.chosenCityReflectedInTheRightCornerOfPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -166,7 +175,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test_project.InvalidAuthorization.authorizationByUnregisteredClient&quot;" />
+            <option value="&quot;project.UiTests.chosenCityReflectedInTheRightCornerOfPage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UiTests.chosenCityReflectedInTheRightCornerOfPage" />
         <item itemvalue="Gradle.CheckAuthorizationButtons" />
         <item itemvalue="Gradle.AuthorizationFooter.checkFooterElements" />
         <item itemvalue="Gradle.AuthorizationFooter" />
         <item itemvalue="Gradle.Ui_tests" />
-        <item itemvalue="Gradle.InvalidAuthorization.authorizationByUnregisteredClient" />
       </list>
     </recent_temporary>
   </component>

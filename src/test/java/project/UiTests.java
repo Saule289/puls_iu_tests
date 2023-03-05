@@ -1,11 +1,7 @@
-package test_project;
+package project;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.selector.ByText;
-import com.codeborne.selenide.selector.WithText;
-import com.github.javafaker.Faker;
 import data.City;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -20,13 +16,13 @@ import java.util.stream.Stream;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
+import static data.City.*;
 import static io.qameta.allure.Allure.step;
 
 
 @Tag("remote")
-public class Ui_tests extends TestBase {
+public class UiTests extends TestBase {
 
     @Test
     @DisplayName("Проверяем лого компании и название вкладок меню")
@@ -121,11 +117,11 @@ public class Ui_tests extends TestBase {
 
     static Stream<Arguments> contactOfCity() {
         return Stream.of(
-                Arguments.of(City.Брянск, "+7 4832 36 70 00"),
-                Arguments.of(City.Воронеж, "+7 473 233 35 47"),
-                Arguments.of(City.Волгоград, "+7 844 251 08 51"),
-                Arguments.of(City.Екатеринбург, "+7 343 287 39 35"),
-                Arguments.of(City.Иркутск, "+7 395 256 74 41")
+                Arguments.of(BRYANSK, "+7 4832 36 70 00"),
+                Arguments.of(VORONEZH, "+7 473 233 35 47"),
+                Arguments.of(VOLGOGRAD, "+7 844 251 08 51"),
+                Arguments.of(EKATERINBURG, "+7 343 287 39 35"),
+                Arguments.of(IRKUTSK, "+7 395 256 74 41")
         );
     }
 
@@ -150,7 +146,7 @@ public class Ui_tests extends TestBase {
         });
 
         step("Выбрать город", () -> {
-            $$(".sm-row").find(text(city.name())).click();
+            $$(".sm-row").findBy(Condition.text(city.getDesc())).click();;
         });
 
         step("Проверить соответствие телефона выбранному городу", () -> {
