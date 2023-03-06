@@ -15,7 +15,7 @@ public class Results {
 
     public void checkLogoName(String value) {
 
-        $(".ht-details").shouldHave(Condition.text(value));
+        $(".main-hero__title").shouldHave(Condition.text(value));
     }
 
     public void checkNamesOfHeaders(String value) {

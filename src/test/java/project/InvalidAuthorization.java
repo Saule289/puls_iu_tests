@@ -20,10 +20,7 @@ public class InvalidAuthorization extends TestBase {
         Faker faker = new Faker();
         String cityRepresentation = faker.options().option("ПУЛЬС Волгоград", "ПУЛЬС Воронеж");
 
-        step("Закрыть все вкладки", () -> {
 
-            Selenide.closeWebDriver();
-        });
 
         step("Открываем главную страницу", () -> {
 

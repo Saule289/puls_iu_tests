@@ -1,13 +1,9 @@
 package pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.selector.ByText;
-
-import static com.codeborne.selenide.CollectionCondition.itemWithText;
-import static com.codeborne.selenide.CollectionCondition.texts;
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Configuration.baseUrl;
-import static com.codeborne.selenide.Selectors.byText;
+
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -23,14 +19,14 @@ public class PageObjects {
 
     public PageObjects choiceMenuHeaders(String value) {
 
-        $(".header-nav").$(withText(value)).hover();
+       $$(".list__item ").findBy(Condition.text(value)).hover();
 
         return this;
     }
 
     public PageObjects clickOnPrivateIcon() {
 
-        $(".icon-private").click();
+        $(".btn-secondary").click();
         return this;
     }
 

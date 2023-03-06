@@ -22,7 +22,7 @@ repositories {
 
 dependencies {
     testImplementation (
-            'com.codeborne:selenide:6.11.0',
+            'com.codeborne:selenide:6.12.2',
             'org.junit.jupiter:junit-jupiter:5.9.2',
             "org.slf4j:slf4j-simple:2.0.6",
             'org.assertj:assertj-core:3.24.2',
@@ -49,5 +49,6 @@ test {
 task remote_test (type: Test) {
     useJUnitPlatform {
         includeTags("remote")
+        systemProperties(System.getProperties())
     }
 }

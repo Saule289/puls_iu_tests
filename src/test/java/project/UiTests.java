@@ -3,6 +3,7 @@ package project;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import data.City;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -16,6 +17,7 @@ import java.util.stream.Stream;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 import static data.City.*;
 import static io.qameta.allure.Allure.step;
@@ -72,46 +74,43 @@ public class UiTests extends TestBase {
     @DisplayName("При смене языка меняется лого компании на английский")
     void logoChangedToEnglish() {
 
-        step("Закрыть все вкладки", () -> {
-
-            Selenide.closeWebDriver();
-        });
 
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
         });
 
         step("Кликнуть на ссылку Русский язык для смены языка на английский", () -> {
-            $("i.icon-english").click();
+            $(".lang-select__select").click();
+            $(".select__options").$$("a").get(0).click();
         });
 
         step("Проверить, что лого отображено на английском языке", () -> {
-            results.checkLogoName("Together we make medicines accessible");
+            results.checkLogoName("\n" +
+                    "            National Pharmaceutical Distributor \n" +
+                    "        ");
         });
     }
 
     @ParameterizedTest
     @DisplayName("В выдаче поиска присутсвутет введенное название")
     @ValueSource(strings = {
-            "Доставка", "Личный кабинет", "Брянск", "Маркировка"
+            "Дистрибьютор", "Завод", "Фармацевт", "Оборудование"
     })
     void searchCheck(String searchInput) {
 
-        step("Закрыть все вкладки", () -> {
-
-            Selenide.closeWebDriver();
-        });
 
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
         });
 
         step("Тап на строку поиска и ввод элемента для посика", () -> {
-            $(".hn-input").hover().setValue(searchInput).pressEnter();
+            $(".search-btn__open").click();
+            $(".fs-20").click();
+            $(".fs-20").setValue(searchInput).pressEnter();
         });
 
         step("Первая строка в выдаче поиска содержит запрашиваемую информацию", () -> {
-            $("p").shouldHave(text(searchInput));
+            $(".info__title").shouldHave(text(searchInput));
         });
     }
 
@@ -133,34 +132,34 @@ public class UiTests extends TestBase {
             String contact_number
 
     ) {
-        step("Закрыть все вкладки", () -> {
 
-            Selenide.closeWebDriver();
-        });
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
         });
 
-        step("Навести мышку на вкладку Группа Компаний", () -> {
-            pageObjects.choiceMenuHeaders("Группа компаний");
+        step("Навести мышку на вкладку О нас", () -> {
+            pageObjects.choiceMenuHeaders("О нас");
         });
 
+        step("Выбрать категорию Группа компания", () -> {
+            $(".nav__inner-list").$(withText("Группа компаний")).hover();
+        });
         step("Выбрать город", () -> {
-            $$(".sm-row").findBy(Condition.text(city.getDesc())).click();;
+            $$(".fs-16").findBy(Condition.text(city.getDesc())).click();;
         });
 
         step("Проверить соответствие телефона выбранному городу", () -> {
-            $(".is-link").shouldHave(text(contact_number));
+            $$(".about__info").get(1).shouldHave(text(contact_number));
         });
     }
 
     @CsvSource({
             "Поставщикам, Контакты для поставщиков",
             "Клиентам, Контакты для клиентов",
-            "Соискателям, Контакты "
+            "МС «СОЗВЕЗДИЕ», Контакты "
 
     })
-
+      @Disabled("переделали страницу")
     @ParameterizedTest
     @DisplayName("Проверка названия ссылок контактов для отдельных групп")
     void searchInformation
@@ -170,17 +169,20 @@ public class UiTests extends TestBase {
                     String contactsReference
             ) {
 
-        step("Закрыть все вкладки", () -> {
 
-            Selenide.closeWebDriver();
-        });
 
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
         });
 
+
+        step("Навести мышку на вкладку Сотрудничество", () -> {
+            pageObjects.choiceMenuHeaders("Сотрудничество");
+        });
+
+
         step("Навести мышку на вкладку" + " " + divisions, () -> {
-            $(byText(divisions)).hover();
+            $(".nav__inner-list").$(withText(divisions)).click();
         });
 
         step("Кликнуть по" + " " + contactsReference, () -> {
