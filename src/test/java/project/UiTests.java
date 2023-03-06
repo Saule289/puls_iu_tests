@@ -167,7 +167,7 @@ public class UiTests extends TestBase {
             (
 
                     String divisions,
-                    String contacts_reference
+                    String contactsReference
             ) {
 
         step("Закрыть все вкладки", () -> {
@@ -183,12 +183,12 @@ public class UiTests extends TestBase {
             $(byText(divisions)).hover();
         });
 
-        step("Кликнуть по" + " " + contacts_reference, () -> {
-            $(byText(contacts_reference)).click();
+        step("Кликнуть по" + " " + contactsReference, () -> {
+            $(byText(contactsReference)).click();
         });
 
-        step("Проверка название ссылки для просмотра контактов" + " " + contacts_reference + " " + "по выбранной вкладке" + " " + divisions, () -> {
-            $(".pd-content").shouldHave(text(contacts_reference));
+        step("Проверка название ссылки для просмотра контактов" + " " + contactsReference + " " + "по выбранной вкладке" + " " + divisions, () -> {
+            $(".pd-content").shouldHave(text(contactsReference));
         });
 
     }

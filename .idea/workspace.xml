@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="add README.md">
+    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="add changes in enum">
+      <change afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/local.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/remote.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/data/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/data/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/AuthorizationFooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/AuthorizationFooter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/CheckAuthorizationButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/CheckAuthorizationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/InvalidAuthorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/InvalidAuthorization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test_project/Ui_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/UiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/UiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/UiTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +58,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -87,13 +87,14 @@
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\notifications" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\src\test\java" />
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\video" />
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\logo" />
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\screenshots" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UiTests.chosenCityReflectedInTheRightCornerOfPage">
-    <configuration name="AuthorizationFooter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AuthorizationFooter (1)">
+    <configuration name="AuthorizationFooter (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -104,9 +105,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value=":remote_test" />
             <option value="--tests" />
-            <option value="&quot;test_project.AuthorizationFooter&quot;" />
+            <option value="&quot;project.AuthorizationFooter&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,7 +186,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Ui_tests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UiTests.logoChangedToEnglish" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -196,9 +197,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value=":remote_test" />
             <option value="--tests" />
-            <option value="&quot;test_project.Ui_tests&quot;" />
+            <option value="&quot;project.UiTests.logoChangedToEnglish&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -210,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AuthorizationFooter (1)" />
+        <item itemvalue="Gradle.UiTests.logoChangedToEnglish" />
         <item itemvalue="Gradle.UiTests.chosenCityReflectedInTheRightCornerOfPage" />
         <item itemvalue="Gradle.CheckAuthorizationButtons" />
         <item itemvalue="Gradle.AuthorizationFooter.checkFooterElements" />
-        <item itemvalue="Gradle.AuthorizationFooter" />
-        <item itemvalue="Gradle.Ui_tests" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677971720800</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add changes in enum">
+      <created>1678036186515</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1678036186515</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -400,6 +408,7 @@
     <MESSAGE value="change CheckAuthorizationButtons" />
     <MESSAGE value="delete webdriver" />
     <MESSAGE value="add README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add README.md" />
+    <MESSAGE value="add changes in enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="add changes in enum" />
   </component>
 </project>
