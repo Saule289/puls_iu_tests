@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="added config">
+      <change afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/WebDriverProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Results.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/InvalidAuthorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/InvalidAuthorization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/project/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/UiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/UiTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/local.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/remote.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +54,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -399,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678129702170</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added config">
+      <created>1681237300992</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681237300992</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -426,6 +425,7 @@
     <MESSAGE value="delete webdriver" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="add changes in enum" />
+    <MESSAGE value="for alluretestops" />
     <MESSAGE value="added config" />
     <option name="LAST_COMMIT_MESSAGE" value="added config" />
   </component>
