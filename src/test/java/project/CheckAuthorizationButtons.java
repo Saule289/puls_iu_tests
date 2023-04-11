@@ -1,6 +1,9 @@
 package project;
 
 import com.codeborne.selenide.Selenide;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Layer;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -8,6 +11,9 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 
 public class CheckAuthorizationButtons extends TestBase{
+    @Owner("saulezhan")
+    @Feature("Issues")
+    @Layer("web")
     @Tag("remote")
     @Test
     @DisplayName("Проверка названия модального окна при нажатии на соответствующие кнопки")

@@ -2,6 +2,9 @@ package project;
 
 import com.codeborne.selenide.Selenide;
 import com.github.javafaker.Faker;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Layer;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,8 +16,10 @@ import static io.qameta.allure.Allure.step;
 
 public class InvalidAuthorization extends TestBase {
 
-
+    @Owner("saulezhan")
+    @Feature("Issues")
     @Tag("remote")
+    @Layer("web")
     @Test
     @DisplayName("Авторизация незарегистрированного пользователя")
     public void authorizationByUnregisteredClient() {

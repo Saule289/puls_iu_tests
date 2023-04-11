@@ -3,6 +3,9 @@ package project;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import data.City;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Layer;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -23,6 +26,9 @@ import static data.City.*;
 import static io.qameta.allure.Allure.step;
 
 
+@Owner("saulezhan")
+@Feature("Issues")
+@Layer("web")
 @Tag("remote")
 public class UiTests extends TestBase {
 

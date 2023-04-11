@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71b0bd9-4840-4216-a8ae-16b450f2e703" name="Changes" comment="add properties">
+    <list default="true" id="d71b0bd9-4840-4216-a8ae-16b450f2e703" name="Changes" comment="delete close webdriver in TestBase">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/qameta/allure/Layer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/project/AuthorizationFooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/AuthorizationFooter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" afterDir="false" />
@@ -58,6 +60,7 @@
       <list>
         <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -394,7 +397,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681238863626</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="close webdriver">
+      <created>1681239255478</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1681239255478</updated>
+    </task>
+    <task id="LOCAL-00026" summary="delete close webdriver in TestBase">
+      <created>1681239431865</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1681239431865</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,6 +439,8 @@
     <MESSAGE value="add README.md" />
     <MESSAGE value="add changes in enum" />
     <MESSAGE value="add properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="add properties" />
+    <MESSAGE value="close webdriver" />
+    <MESSAGE value="delete close webdriver in TestBase" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete close webdriver in TestBase" />
   </component>
 </project>

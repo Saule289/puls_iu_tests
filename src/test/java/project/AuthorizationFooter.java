@@ -1,6 +1,9 @@
 package project;
 
-import com.codeborne.selenide.Selenide;
+
+import io.qameta.allure.Feature;
+import io.qameta.allure.Layer;
+import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -8,15 +11,14 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 
 public class AuthorizationFooter extends TestBase {
+    @Layer("web")
+    @Owner("saulezhan")
+    @Feature("Issues")
     @Tag("remote")
     @Test
     @DisplayName("Проверка элементов футера на странице авторизации")
     public void checkFooterElements() {
 
-            step("Закрыть все вкладки", () -> {
-
-                Selenide.closeWebDriver();
-            });
 
         step("Открываем главную страницу", () -> {
 
