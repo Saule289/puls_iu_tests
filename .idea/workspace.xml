@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="added config">
-      <change afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/config/WebDriverProvider.java" afterDir="false" />
+    <list default="true" id="d71b0bd9-4840-4216-a8ae-16b450f2e703" name="Changes" comment="add changes in enum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/remote.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,18 +53,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
-        <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -95,8 +88,31 @@
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\screenshots" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UiTests">
-    <configuration name="UiTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CheckAuthorizationButtons (1)">
+    <configuration name="AuthorizationFooter (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":remote_test" />
+            <option value="--tests" />
+            <option value="&quot;project.AuthorizationFooter&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CheckAuthorizationButtons (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -109,7 +125,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;project.UiTests&quot;" />
+            <option value="&quot;project.CheckAuthorizationButtons&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CheckAuthorizationButtons" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;test_project.CheckAuthorizationButtons&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -153,7 +192,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
+            <option value=":remote_test" />
             <option value="--tests" />
             <option value="&quot;project.UiTests.logoChangedToEnglish&quot;" />
           </list>
@@ -165,59 +204,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UiTests.searchCheck" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;project.UiTests.searchCheck&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="UiTests.searchInformation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;project.UiTests.searchInformation&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.UiTests" />
-        <item itemvalue="Gradle.UiTests.searchCheck" />
-        <item itemvalue="Gradle.UiTests.searchInformation" />
-        <item itemvalue="Gradle.UiTests.chosenCityReflectedInTheRightCornerOfPage" />
+        <item itemvalue="Gradle.CheckAuthorizationButtons (1)" />
+        <item itemvalue="Gradle.AuthorizationFooter (1)" />
         <item itemvalue="Gradle.UiTests.logoChangedToEnglish" />
+        <item itemvalue="Gradle.UiTests.chosenCityReflectedInTheRightCornerOfPage" />
+        <item itemvalue="Gradle.CheckAuthorizationButtons" />
       </list>
     </recent_temporary>
   </component>
@@ -384,21 +377,7 @@
       <option name="project" value="LOCAL" />
       <updated>1678036186515</updated>
     </task>
-    <task id="LOCAL-00023" summary="added config">
-      <created>1678129702170</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1678129702170</updated>
-    </task>
-    <task id="LOCAL-00024" summary="added config">
-      <created>1681237300992</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1681237300992</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -425,8 +404,6 @@
     <MESSAGE value="delete webdriver" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="add changes in enum" />
-    <MESSAGE value="for alluretestops" />
-    <MESSAGE value="added config" />
-    <option name="LAST_COMMIT_MESSAGE" value="added config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add changes in enum" />
   </component>
 </project>
