@@ -42,12 +42,5 @@ public class TestBase {
         Attach.addVideo();
     }
 
-    void closeWindow() {
-        step("Закрыть все вкладки", () -> {
-
-            Selenide.closeWebDriver();
-        });
-    }
-
-    }
+     }
 
