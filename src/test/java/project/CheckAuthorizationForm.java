@@ -17,6 +17,11 @@ public class CheckAuthorizationForm extends TestBase {
 
     public void checkLoginForm() {
 
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
+
 
         {
             step("Открываем главную страницу", () -> {

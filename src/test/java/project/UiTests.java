@@ -74,6 +74,10 @@ public class UiTests extends TestBase {
     @DisplayName("При смене языка меняется лого компании на английский")
     void logoChangedToEnglish() {
 
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
 
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
@@ -98,6 +102,10 @@ public class UiTests extends TestBase {
     })
     void searchCheck(String searchInput) {
 
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
 
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();
@@ -132,6 +140,10 @@ public class UiTests extends TestBase {
             String contact_number
 
     ) {
+        step("Закрыть все вкладки", () -> {
+
+            Selenide.closeWebDriver();
+        });
 
         step("Открываем главную страницу", () -> {
             pageObjects.openPage();

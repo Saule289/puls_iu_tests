@@ -13,10 +13,17 @@ import static io.qameta.allure.Allure.step;
 
 public class InvalidAuthorization extends TestBase {
 
+
     @Tag("remote")
     @Test
     @DisplayName("Авторизация незарегистрированного пользователя")
     public void authorizationByUnregisteredClient() {
+
+        step("Закрыть все вкладки", () -> {
+
+        Selenide.closeWebDriver();
+    });
+
         Faker faker = new Faker();
         String cityRepresentation = faker.options().option("ПУЛЬС Волгоград", "ПУЛЬС Воронеж");
 

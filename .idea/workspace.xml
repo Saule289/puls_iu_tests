@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71b0bd9-4840-4216-a8ae-16b450f2e703" name="Changes" comment="add changes in enum">
+    <list default="true" id="d71b0bd9-4840-4216-a8ae-16b450f2e703" name="Changes" comment="add properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/remote.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/AuthorizationFooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/AuthorizationFooter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/InvalidAuthorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/InvalidAuthorization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/project/UiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/UiTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,7 +380,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678036186515</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add properties">
+      <created>1681238661231</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681238661231</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add properties">
+      <created>1681238863626</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681238863626</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,6 +421,7 @@
     <MESSAGE value="delete webdriver" />
     <MESSAGE value="add README.md" />
     <MESSAGE value="add changes in enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="add changes in enum" />
+    <MESSAGE value="add properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="add properties" />
   </component>
 </project>

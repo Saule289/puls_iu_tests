@@ -1,5 +1,6 @@
 package project;
 
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -11,6 +12,11 @@ public class AuthorizationFooter extends TestBase {
     @Test
     @DisplayName("Проверка элементов футера на странице авторизации")
     public void checkFooterElements() {
+
+            step("Закрыть все вкладки", () -> {
+
+                Selenide.closeWebDriver();
+            });
 
         step("Открываем главную страницу", () -> {
 
