@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d71b0bd9-4840-4216-a8ae-16b450f2e703" name="Changes" comment="delete close webdriver in TestBase">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/qameta/allure/Layer.java" afterDir="false" />
+    <list default="true" id="d71b0bd9-4840-4216-a8ae-16b450f2e703" name="Changes" comment="added allure annotations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/AuthorizationFooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/AuthorizationFooter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/CheckAuthorizationForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/project/InvalidAuthorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/InvalidAuthorization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Results.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/project/UiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/project/UiTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +67,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2MQIoICzZgbkpYAI45eNRuv5BAe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -94,30 +94,7 @@
       <recent name="C:\Users\zhankulova.s\IdeaProjects\puls_uitest\images\screenshots" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CheckAuthorizationButtons (1)">
-    <configuration name="AuthorizationFooter (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":remote_test" />
-            <option value="--tests" />
-            <option value="&quot;project.AuthorizationFooter&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.UiTests.searchInformation">
     <configuration name="CheckAuthorizationButtons (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,7 +118,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CheckAuthorizationButtons" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UiTests.checkHeaderNames" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +131,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;test_project.CheckAuthorizationButtons&quot;" />
+            <option value="&quot;project.UiTests.checkHeaderNames&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -164,7 +141,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UiTests.chosenCityReflectedInTheRightCornerOfPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UiTests.searchInformation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -177,7 +154,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;project.UiTests.chosenCityReflectedInTheRightCornerOfPage&quot;" />
+            <option value="&quot;project.UiTests.searchInformation&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -187,43 +164,62 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UiTests.logoChangedToEnglish" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="puls_uitest [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":remote_test" />
-            <option value="--tests" />
-            <option value="&quot;project.UiTests.logoChangedToEnglish&quot;" />
+            <option value="allureReport" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="puls_uitest [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="allureServe" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UiTests.searchInformation" />
+        <item itemvalue="Gradle.puls_uitest [allureServe]" />
+        <item itemvalue="Gradle.UiTests.checkHeaderNames" />
+        <item itemvalue="Gradle.puls_uitest [allureReport]" />
         <item itemvalue="Gradle.CheckAuthorizationButtons (1)" />
-        <item itemvalue="Gradle.AuthorizationFooter (1)" />
-        <item itemvalue="Gradle.UiTests.logoChangedToEnglish" />
-        <item itemvalue="Gradle.UiTests.chosenCityReflectedInTheRightCornerOfPage" />
-        <item itemvalue="Gradle.CheckAuthorizationButtons" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20352ab6-0005-4f69-bd5d-209b7f5b5cdd" name="Changes" comment="" />
+      <changelist id="d71b0bd9-4840-4216-a8ae-16b450f2e703" name="Changes" comment="added allure annotations" />
       <created>1677693577693</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -411,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681239431865</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added allure annotations">
+      <created>1681243067305</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1681243067305</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,6 +444,7 @@
     <MESSAGE value="add properties" />
     <MESSAGE value="close webdriver" />
     <MESSAGE value="delete close webdriver in TestBase" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete close webdriver in TestBase" />
+    <MESSAGE value="added allure annotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added allure annotations" />
   </component>
 </project>

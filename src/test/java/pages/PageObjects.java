@@ -24,6 +24,13 @@ public class PageObjects {
         return this;
     }
 
+    public PageObjects clickOnMenuHeaders(String value) {
+
+        $$(".list__item ").findBy(Condition.text(value)).click();
+
+        return this;
+    }
+
     public PageObjects clickOnPrivateIcon() {
 
         $(".btn-secondary").click();

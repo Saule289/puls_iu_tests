@@ -14,12 +14,12 @@ import static com.codeborne.selenide.Selenide.$$;
 public class Results {
 
     public void checkLogoName(String value) {
-
-        $(".main-hero__title").shouldHave(Condition.text(value));
+                       $(".main-hero__title").shouldHave(Condition.text(value));
     }
 
     public void checkNamesOfHeaders(String value) {
-        $$(".hn-nav-list").shouldHave(texts(value));
+
+        $(".header__nav").shouldHave(text(value));
     }
 
     public void checkNamesOfInputsOnAuthorizationForm(String value) {

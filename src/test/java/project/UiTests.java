@@ -6,7 +6,6 @@ import data.City;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Layer;
 import io.qameta.allure.Owner;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -19,7 +18,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import java.util.stream.Stream;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byText;
+
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 import static data.City.*;
@@ -49,30 +48,28 @@ public class UiTests extends TestBase {
 
         step("Проверка лого компании", () -> {
 
-            results.checkLogoName("Вместе мы делаем\n" +
-                    "лекарства доступными");
+            results.checkLogoName("Национальный фармдистрибьютор");
         });
 
         step("Проверка названия первого элемента меню", () -> {
-            results.checkNamesOfHeaders("О компании");
+            pageObjects.choiceMenuHeaders("О нас");
+            results.checkNamesOfHeaders("О нас");
         });
         step("Проверка названия второго элемента меню", () -> {
-            results.checkNamesOfHeaders("Группа компаний");
+            pageObjects.choiceMenuHeaders("Сотрудничество");
+            results.checkNamesOfHeaders("Сотрудничество");
         });
         step("Проверка названия третьего элемента меню", () -> {
-            results.checkNamesOfHeaders("Поставщикам");
+            pageObjects.choiceMenuHeaders("Карьера");
+            results.checkNamesOfHeaders("Карьера");
         });
         step("Проверка названия четвертого элемента меню", () -> {
-            results.checkNamesOfHeaders("Соискателям");
+            pageObjects.choiceMenuHeaders("Новости");
+            results.checkNamesOfHeaders("Новости");
         });
         step("Проверка названия пятого элемента меню", () -> {
+            pageObjects.choiceMenuHeaders("Контакты");
             results.checkNamesOfHeaders("Контакты");
-        });
-        step("Проверка названия шестого элемента меню", () -> {
-            results.checkNamesOfHeaders("Тендер");
-        });
-        step("Проверка названия седьмого элемента меню", () -> {
-            results.checkNamesOfHeaders("Маркировка");
         });
     }
 
@@ -163,7 +160,8 @@ public class UiTests extends TestBase {
             $(".nav__inner-list").$(withText("Группа компаний")).hover();
         });
         step("Выбрать город", () -> {
-            $$(".fs-16").findBy(Condition.text(city.getDesc())).click();;
+            $$(".fs-16").findBy(Condition.text(city.getDesc())).click();
+            ;
         });
 
         step("Проверить соответствие телефона выбранному городу", () -> {
@@ -172,21 +170,20 @@ public class UiTests extends TestBase {
     }
 
     @CsvSource({
-            "Поставщикам, Контакты для поставщиков",
-            "Клиентам, Контакты для клиентов",
-            "МС «СОЗВЕЗДИЕ», Контакты "
+            "Региональные компании, ПУЛЬС Санкт-Петербург",
+            "Центральная компания, Офис ООО «ФК ПУЛЬС»"
+
 
     })
-      @Disabled("переделали страницу")
+
     @ParameterizedTest
     @DisplayName("Проверка названия ссылок контактов для отдельных групп")
     void searchInformation
             (
 
                     String divisions,
-                    String contactsReference
+                    String contactOffice
             ) {
-
 
 
         step("Открываем главную страницу", () -> {
@@ -194,21 +191,17 @@ public class UiTests extends TestBase {
         });
 
 
-        step("Навести мышку на вкладку Сотрудничество", () -> {
-            pageObjects.choiceMenuHeaders("Сотрудничество");
+        step("Клик на вкладку Контакты", () -> {
+            pageObjects.clickOnMenuHeaders("Контакты");
         });
 
 
-        step("Навести мышку на вкладку" + " " + divisions, () -> {
-            $(".nav__inner-list").$(withText(divisions)).click();
+        step("Клик на подразделение" + " " + divisions, () -> {
+            $(".primary").selectOptionContainingText(divisions);
         });
 
-        step("Кликнуть по" + " " + contactsReference, () -> {
-            $(byText(contactsReference)).click();
-        });
-
-        step("Проверка название ссылки для просмотра контактов" + " " + contactsReference + " " + "по выбранной вкладке" + " " + divisions, () -> {
-            $(".pd-content").shouldHave(text(contactsReference));
+        step("Проверка название ссылки для просмотра контактов" + " " + contactOffice + " " + "по выбранной вкладке" + " " + divisions, () -> {
+            $(".contacts-companies").shouldHave(text(contactOffice));
         });
 
     }
